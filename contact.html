@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Project Layout</title>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+          crossorigin="anonymous" />
+
+    <!-- Custom Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic'
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower:400' rel='stylesheet' type='text/css'>
+
+    <!-- External CSS -->
+    <link href="css/globalStyle.css" rel="stylesheet" type="text/css" />
+
+    <!-- Production Link-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+    <div id="wrapper" class="container bg-light">
+        <!-- Start Header -->
+        <header class="row">
+            <!-- nav bar with dropdown menu -->
+            <nav class="navbar navbar-expand-sm navbar-light bg-light col-md-12">
+                <!-- add logo to navbar-->
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo/logo.png" class="img-fluid img-40">
+                </a>
+                <!-- hamburger button to open menu on small devices-->
+                <span class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </span>
+                <!-- wrapper for collapsable section of menu -->
+                <div class="collapse navbar-collapse" id="myMenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="aboutUs.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="receiptList.html" class="nav-link">Latest Recepies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- End Header -->
+        <!-- Start Body Area -->
+        <section id="body" class="row">
+
+            <!-- jumbotron products heading -->
+            <div class="jumbotron-sm text-center mx-auto pt-3 col-md-12">
+                <h1>Write to Us</h1>
+            </div>
+
+            <div class="col-md-7">
+                <!-- form section -->
+                <form action="#" method="post" onsubmit="return validateContactForm()">
+
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Your Name" id="txtName" name="txtName" required>
+                            <span class="d-block text-danger mt-2 text-left" id="errorName"></span>
+                        </div>
+                        <div class="col">
+                            <input type="email" class="form-control" placeholder="Your Email" id="txtEmail" id="txtEmail">
+                            <span class="d-block text-danger mt-2 text-left" id="errorEmail"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col">
+                            <input type="number" class="form-control" placeholder="Your Cell" id="txtCell" id="txtCell"
+                                   min="0">
+                        </div>
+                        <div class="col">
+                            <select class="form-control" id="ddlMsgType" name="ddlMsgType">
+                                <option value="">Select Query Type</option>
+                                <option value="Query">Query</option>
+                                <option value="Compliment">Compliment</option>
+                                <option value="Suggestion">Suggestion</option>
+                                <option value="Complaint">Complaint</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mt-20">
+                        <div class="col-3 ml-3">
+                            <div><label>Your Gender:</label></div>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="rdMale" value="male">
+                                <label class="form-check-label" for="inlineRadio1">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="rdFemale" value="female">
+                                <label class="form-check-label" for="inlineRadio2">Female</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="rdTransgender" value="transgender">
+                                <label class="form-check-label" for="inlineRadio3">Transgender</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-20">
+                        <div class="col-3 ml-3">
+                            <div><label>Your Interest:</label></div>
+                        </div>
+                        <div class="col-7">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="chkAsian" value="option1">
+                                <label class="form-check-label" for="chkAsian">Asian Dishes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="chkArabic" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Arabic Salad</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="chkWestern" value="option3">
+                                <label class="form-check-label" for="chkWestern">Western Recepies</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <textarea class="form-control mt-2" name="txtMessage" id="txtMessage" cols="30" rows="10"
+                              placeholder="Enter Your Query/Suggestion/Compliment/Suggestion"></textarea>
+
+                    <input type="submit" value="Submit" class="btn btn-lg btn-success mt-2 mb-5">
+
+                </form>
+
+            </div>
+
+            <div class="col-md-5">
+                <!-- map section -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13287.307629702611!2d73.0740604!3d33.6357298!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x95d7e2b76897981a!2sEVS+Training+Institute+Rawalpindi!5e0!3m2!1sen!2s!4v1548581702743"
+                        height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <!-- End Body Area -->
+        <!-- Start Footer Area -->
+        <section id="footer" class="row">
+            <div id="footer-copyrights" class="col-md-4">
+                &copy; Laziza Restaurant
+            </div>
+            <nav id="footer-links" class="col-md-8">
+                <!-- Navigation Links -->
+                <ul class="nav justify-content-end color-white">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> Shop </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> About Us </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-shopping-cart"></i> My Cart
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- End Footer Area -->
+    </div>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script>
+        //set width of iframe object
+        var iframeElement = document.getElementsByTagName('iframe')[0];
+        console.log(iframeElement);
+
+        //change width of iframe element by using "STYLE" attribute
+        iframeElement.style.width = '100%';
+        console.log(iframeElement);
+
+        //debugger;
+        
+
+       // text.innerText = "Laziza Resturant Islamabad";
+       
+
+        function validateContactForm() {
+            var txtName = document.getElementById('txtName').value;
+            var txtEmail = document.getElementById('txtEmail');
+
+            console.log(txtName.value);
+            //example; ali@evs.com;	ALI@evs.com
+
+            if (txtEmail.value == "") {
+                //set the error message
+                document.getElementById('errorEmail').innerHTML = "Email is required";
+
+                //set the border red for textbox
+                txtEmail.setAttribute('class', 'form-control border-red');
+                return false;
+            }
+
+            else {
+                document.getElementById('errorEmail').innerHTML = "";
+                txtEmail.setAttribute('class', 'form-control');
+            }
+            return true;
+
+
+        }
+
+        var text = document.querySelector('.place-name').innerHTML;
+
+        console.log(text.innerText);
+    </script>
+
+
+
+
+
+</body>
+
+</html>

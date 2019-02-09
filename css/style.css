@@ -1,0 +1,355 @@
+div,
+header,
+footer,
+section,
+article,
+.card {
+    /* border: 1px solid black; */
+}
+
+
+/* Header */
+
+.img-40 {
+    width: 40%;
+}
+
+#header-links {
+    padding-top: 1rem;
+}
+
+.color-white i,
+.color-white a {
+    color: white;
+}
+
+
+/*Body */
+
+.fa-star {
+    color: gold;
+}
+
+.card:hover {
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 10);
+    cursor: pointer;
+    transition: 1500ms;
+}
+
+
+/*Slider */
+
+
+/* #slider{
+  height:40vh;
+  background-size:100% 100%;
+  background-position:center center;
+  background-repeat:no-repeat;
+} */
+
+
+/* Coursel image backgrounds */
+
+.carousel-item {
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+#carouselImg1 {
+    background-image: url('../images/slider/s2hn-hero.jpg');
+}
+
+#carouselImg2 {
+    background-image: url('../images/slider/s3na-hero.jpg');
+}
+
+#carouselImg3 {
+    background-image: url('../images/slider/s5zd-hero.jpg');
+}
+
+
+/* Override the carousel caption style here.... */
+
+.carousel-caption {
+    color: black;
+    font-weight: bold;
+}
+
+/*@media only screen and (max-width:768px) {
+    #slider,
+    #slider .carousel-inner,
+    .carousel-inner * {
+        height: 30vh;
+    }
+
+    #header-links {
+        padding-top: 0rem;
+    }
+
+    #jumbo {
+        padding-top: 20px;
+    }
+}*/
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* Footer */
+
+    #footer {
+        background-color: black;
+        color: white;
+    }
+
+    #footer-copyrights {
+        padding-top: 0.5rem;
+    }
+
+    .navbar-dark a {
+        color: white !important;
+    }
+
+    .border-red {
+        border: 2px solid red;
+    }
+
+
+    /* To write text on image */
+    .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 30px;
+    }
+
+    .top-left {
+        position: absolute;
+        top: 8px;
+        left: 30px;
+    }
+
+    .top-right {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+    }
+
+    .bottom-right {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .text-white {
+        color: white
+    }
+
+    /*for ticker*/
+
+    .m-news-f {
+        float: left;
+        background: #ccdae3 url(../images/latestUpdates.png) no-repeat;
+        width: 100px;
+        height: 33px;
+        /*margin-left:2px;*/
+    }
+
+    .m-news {
+        height: 24px;
+        margin-top: 4px;
+    }
+
+    .m-news-m {
+        float: right;
+        background-color: #ccdae3;
+        width: 848px;
+        height: 33px;
+        overflow: hidden;
+        padding-top: 6px;
+    }
+
+
+
+    .food-marqee a {
+        color: red;
+    }
+
+        .food-marqee a:hover {
+            color: darkgreen;
+            text-decoration: underline;
+        }
+
+
+        /* To manage footer responsive*/
+body {
+    background-color: lightblue;
+}
+
+@media screen and (max-width: 479px) {
+    .nav-link {
+        display: block !important;
+        padding: .5rem .5rem !important;
+    }
+
+    #footer-copyrights {
+        padding-top: 0.5rem !important;
+        text-align: center !important;
+        align-content: center !important;
+    }
+
+    .justify-content-end {
+        -ms-flex-pack: end !important;
+        justify-content: center !important;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .nav-link {
+        display: block !important;
+        padding: .5rem .5rem !important;
+    }
+}
+
+@media screen and (min-width: 490px) {
+    .nav-link {
+        display: block !important;
+        padding: .5rem .5rem !important;
+    }
+
+    #footer-copyrights {
+        padding-top: 0.5rem !important;
+        text-align: center !important;
+        align-content: center !important;
+    }
+
+    .justify-content-end {
+        -ms-flex-pack: end !important;
+        justify-content: center !important;
+    }
+}
+/*hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.header-section {
+    background-color: #00a2ff;
+    padding-top: 15px;
+}
+
+.no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.logo-section h2 {
+    margin-top: 0;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding-top: 7px;
+}
+
+.navbar-default {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: 0 !important;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    color: #fff !important;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-default {
+    margin-bottom: 5px !important;
+}
+    /* .navbar-default a .fa{
+    font-size:  24px;
+} */
+
+    .navbar-default a img {
+        position: relative;
+        top: -10px;
+    }
+
+.navbar-nav li {
+    margin-right: 10px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.lastest-products-section {
+    padding-top: 20px;
+}
+
+    .lastest-products-section .section-heading {
+        font-size: 40px;
+        font-weight: 700;
+        color: #48a0d7;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .lastest-products-section .product-item {
+        box-shadow: 1px 1px rgba(0,0,0,.1);
+        margin-bottom: 30px;
+    }
+
+.product-item .meta-info {
+    padding: 15px;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+    .img-wrapper img {
+        width: 100%;
+    }
+
+    .img-wrapper h4 {
+        position: absolute;
+        background-color: rgba(255,255,255,.9);
+        bottom: 50px;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        color: #48a0d7;
+    }
+
+.lastest-products-section .product-item .category {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.lastest-products-section .meta-info .price {
+    float: left;
+}
+
+.lastest-products-section .meta-info .cart-link {
+    float: right;
+}
+
+@media screen and (max-width:767px) {
+    .img-wrapper img {
+        width: auto !important;
+    }
+}
